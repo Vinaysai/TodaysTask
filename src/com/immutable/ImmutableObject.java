@@ -3,11 +3,6 @@ package com.immutable;
 public class ImmutableObject {
 
 	private final int id;
-	@Override
-	public String toString() {
-		return "ImmutableObject [id=" + id + ", obj=" + obj + "]";
-	}
-
 	private final Employee obj;
 
 	public ImmutableObject(int id, Employee obj) {
@@ -22,6 +17,11 @@ public class ImmutableObject {
 
 	public Employee getObj() {
 		return obj;
+	}
+
+	@Override
+	public String toString() {
+		return "ImmutableObject [id=" + id + ", obj=" + obj + "]";
 	}
 
 }
