@@ -31,9 +31,11 @@ public class SortAnArray {
 		int n = arr.length - 1;
 
 		for (int i = 0; i < n; i++) {
+			
 			int index = i;
 
 			for (int j = i; j < arr.length; j++) {
+				
 				index = j;
 
 				if (arr[i] > arr[index]) {
